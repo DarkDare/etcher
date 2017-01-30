@@ -5,9 +5,6 @@
       <svg-icon class="center-block"
         path="../../../assets/drive.svg"
         ng-disabled="main.shouldDriveStepBeDisabled()"></svg-icon>
-      <span class="icon-caption">Select Drive</span>
-
-      <span class="badge space-top-medium">1</span>
 
       <div class="space-vertical-large">
         <div ng-hide="main.selection.hasDrive()">
@@ -45,12 +42,6 @@
         class="center-block"
         path="{{ main.selection.getImageLogo() || '../../../assets/image.svg' }}"
         ng-disabled="main.shouldImageStepBeDisabled()"></svg-icon>
-      <span
-        class="icon-caption"
-        ng-disabled="main.shouldImageStepBeDisabled()">Select Image</span>
-      <span
-        class="badge space-top-medium"
-        ng-disabled="main.shouldImageStepBeDisabled()">2</span>
 
       <div class="space-vertical-large">
         <div ng-hide="main.selection.hasImage()">
@@ -93,10 +84,6 @@
       <svg-icon class="center-block"
         path="../../../assets/flash.svg"
         ng-disabled="main.shouldFlashStepBeDisabled()"></svg-icon>
-      <span class="icon-caption"
-        ng-disabled="main.shouldFlashStepBeDisabled()">Flash Image</span>
-
-      <span class="badge space-top-medium" ng-disabled="main.shouldFlashStepBeDisabled()">3</span>
 
       <div class="space-vertical-large">
         <progress-button class="button-brick"
